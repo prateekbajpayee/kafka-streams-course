@@ -15,9 +15,8 @@
         <dependency>
             <groupId>org.apache.kafka</groupId>
             <artifactId>kafka-streams</artifactId>
-            <version>0.11.0.0</version>
+            <version>2.1.1</version>
         </dependency>
-
 
         <!--for logging purposes-->
         <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
@@ -61,7 +60,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>com.github.simplesteph.udemy.kafka.streams.FavouriteColourApp</mainClass>
+                            <mainClass>com.github.simplesteph.udemy.kafka.streams.MyFavouriteColourApp</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

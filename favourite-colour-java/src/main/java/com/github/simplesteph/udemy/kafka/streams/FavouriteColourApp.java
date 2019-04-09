@@ -15,7 +15,7 @@ import org.apache.kafka.streams.kstream.KTable;
 
 public class FavouriteColourApp {
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         Properties config = new Properties();
         config.put(StreamsConfig.APPLICATION_ID_CONFIG, "favourite-colour-java");
         config.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "127.0.0.1:9092");
@@ -26,7 +26,7 @@ public class FavouriteColourApp {
         // we disable the cache to demonstrate all the "steps" involved in the transformation - not recommended in prod
         config.put(StreamsConfig.CACHE_MAX_BYTES_BUFFERING_CONFIG, "0");
 
-        KStreamBuilder builder = new KStreamBuilder();
+        //KStreamBuilder builder = new KStreamBuilder();
 
         // Step 1: We create the topic of users keys to colours
         KStream<String, String> textLines = builder.stream("favourite-colour-input");
@@ -65,5 +65,5 @@ public class FavouriteColourApp {
 
         // shutdown hook to correctly close the streams application
         Runtime.getRuntime().addShutdownHook(new Thread(streams::close));
-    }
+    }*/
 }
